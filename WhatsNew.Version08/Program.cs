@@ -9,16 +9,19 @@ static bool CompareTuple((int,int) tuple1, (int, int) tuple2)
     return tuple1 == tuple2;
 }
 
-static IEnumerable<int> CreateList()
+static IEnumerable<string> CreateList()
 {
-    foreach (var item in Enumerable.Range(0,10))
+    // https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#using-declarations
+    using var file = new StreamReader(".\\TEXT.txt");
+    
+    while (!file.EndOfStream)
     {
-        yield return item;
+        yield return file.ReadLine() ?? "";
     }
 }
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions
 var value = 10;
-
 var card = new Card
 {
     Color = value switch
@@ -30,6 +33,7 @@ var card = new Card
     }
 };
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#tuple-patterns
 (card.Text, card.Color) = value switch
 {
     > 12 => ("ERROR", Colors.Red),
@@ -38,7 +42,6 @@ var card = new Card
     _ => ("OK", Colors.Green)
 };
 
-// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#tuple-patterns
 var (p, x, y, z) = (1, 2, 1, 2);
 
 var condition = CompareTuple((p, x), (y, z));
@@ -48,6 +51,7 @@ var list = CreateList();
 
 WriteLine($"condition: {list.Count()}");
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#indices-and-ranges
 var firstThree = list.ToArray()[0..3];
 var last = firstThree[^1];
 
