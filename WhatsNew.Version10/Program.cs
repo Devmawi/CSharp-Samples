@@ -2,8 +2,10 @@
 // File scoped name space
 using WhatsNew.Version10;
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements
 Console.WriteLine("What's new in C# 10");
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#record-structs
 var currentDateTime = DateTime.UtcNow;
 var r = new RecordStruct { Value=1, DateTime= currentDateTime };
 var r2 = r with { }; // Copy
@@ -23,9 +25,10 @@ RecordClass rc4 = new();
 var recordClassInstancesAreEqual = rc == rc2 && rc.Equals(rc4);
 Console.WriteLine($"recordClassInstancesAreEqual: {recordClassInstancesAreEqual}");
 
-var (value, time) = rc4;
+var (value, time) = rc4; // Unpacking/ De constructing
 Console.WriteLine($"Value: {value}, Time: {time}");
 
+// https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10#extended-property-patterns
 var hasValueOne = rc3 is not RecordClass { Value: > 2 and < -1 }; // Extended property patterns
 Console.WriteLine($"hasValueOne: {hasValueOne}");
 
