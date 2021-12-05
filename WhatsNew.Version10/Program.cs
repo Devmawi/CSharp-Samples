@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// File scoped name space
-using WhatsNew.Version10;
+// File scoped name space and global using
+global using WhatsNew.Version10;
 
 // https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements
 Console.WriteLine("What's new in C# 10");
