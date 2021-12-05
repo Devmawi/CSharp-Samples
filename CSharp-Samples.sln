@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsNew.Version10", "Whats
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsNew.Version09", "WhatsNew.Version09\WhatsNew.Version09.csproj", "{3465CF95-3945-466D-8B72-AC126C6AFB3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsNew.Version08", "WhatsNew.Version08\WhatsNew.Version08.csproj", "{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3465CF95-3945-466D-8B72-AC126C6AFB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3465CF95-3945-466D-8B72-AC126C6AFB3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3465CF95-3945-466D-8B72-AC126C6AFB3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

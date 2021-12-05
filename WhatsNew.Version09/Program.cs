@@ -18,4 +18,4 @@ WriteLine($"recordsAreEqual: {recordsAreEqual}");
 
 new PartialClass().Hello();
 
-ReadLine();
+
