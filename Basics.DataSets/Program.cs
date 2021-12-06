@@ -18,8 +18,10 @@ sampleAdapter.Connection = new System.Data.SqlClient.SqlConnection(sqlConnection
 var row = ds.Sample.NewSampleRow();
 row.Value = 3;
 row.DateTime = DateTime.Now;
+// sampleAdapter.Insert2, DateTime.Now);
 ds.Sample.AddSampleRow(row);
 
+// https://docs.microsoft.com/en-us/visualstudio/data-tools/update-data-by-using-a-tableadapter?view=vs-2022
 sampleAdapter.Update(ds.Sample);
 sampleAdapter.Fill(ds.Sample);
 
@@ -44,15 +46,3 @@ foreach (var item in ds.Sample.ToArray())
 }
 
 sampleAdapter.Update(ds);
-
-
-
-//ds.Sample.AcceptChanges();
-
-//sampleAdapter.Insert(2, DateTime.Now);
-//sampleAdapter.Fill(ds.Sample);
-
-//foreach (var item in ds.Sample)
-//{
-//    WriteLine($"{item.Value}, {item.DateTime}");
-//}
