@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Demo1.mdf;Integrated Security=True;Connect Timeout=30" IsAppSettingsProperty="false" Modifier="Assembly" Name="Demo1ConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Demo1.mdf;Integrated Security=True;Connect Timeout=30" IsAppSettingsProperty="false" Modifier="Public" Name="Demo1ConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
           <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=.\Demo1.mdf;Integrated Security=True;Connect Timeout=30" IsAppSettingsProperty="false" Modifier="Assembly" Name="Demo1ConnectionString1" ParameterPrefix="@" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
@@ -91,20 +91,20 @@ SELECT Id, Value, DateTime FROM Sample WHERE (Id = @Id)</CommandText>
   <xs:element name="DemoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DemoDataSet" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DemoDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Sample" msprop:Generator_RowClassName="SampleRow" msprop:Generator_RowEvHandlerName="SampleRowChangeEventHandler" msprop:Generator_RowDeletedName="SampleRowDeleted" msprop:Generator_RowDeletingName="SampleRowDeleting" msprop:Generator_RowEvArgName="SampleRowChangeEvent" msprop:Generator_TablePropName="Sample" msprop:Generator_RowChangedName="SampleRowChanged" msprop:Generator_UserTableName="Sample" msprop:Generator_RowChangingName="SampleRowChanging" msprop:Generator_TableClassName="SampleDataTable" msprop:Generator_TableVarName="tableSample">
+        <xs:element name="Sample" msprop:Generator_RowEvHandlerName="SampleRowChangeEventHandler" msprop:Generator_RowDeletedName="SampleRowDeleted" msprop:Generator_RowDeletingName="SampleRowDeleting" msprop:Generator_RowEvArgName="SampleRowChangeEvent" msprop:Generator_TablePropName="Sample" msprop:Generator_RowChangedName="SampleRowChanged" msprop:Generator_UserTableName="Sample" msprop:Generator_RowChangingName="SampleRowChanging" msprop:Generator_RowClassName="SampleRow" msprop:Generator_TableClassName="SampleDataTable" msprop:Generator_TableVarName="tableSample">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:int" />
-              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" type="xs:double" minOccurs="0" />
-              <xs:element name="DateTime" msprop:Generator_UserColumnName="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:int" />
+              <xs:element name="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnVarNameInTable="columnValue" type="xs:double" minOccurs="0" />
+              <xs:element name="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_UserColumnName="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="GetSample" msprop:Generator_RowClassName="GetSampleRow" msprop:Generator_RowEvHandlerName="GetSampleRowChangeEventHandler" msprop:Generator_RowDeletedName="GetSampleRowDeleted" msprop:Generator_RowDeletingName="GetSampleRowDeleting" msprop:Generator_RowEvArgName="GetSampleRowChangeEvent" msprop:Generator_TablePropName="GetSample" msprop:Generator_RowChangedName="GetSampleRowChanged" msprop:Generator_UserTableName="GetSample" msprop:Generator_RowChangingName="GetSampleRowChanging" msprop:Generator_TableClassName="GetSampleDataTable" msprop:Generator_TableVarName="tableGetSample">
+        <xs:element name="GetSample" msprop:Generator_RowEvHandlerName="GetSampleRowChangeEventHandler" msprop:Generator_RowDeletedName="GetSampleRowDeleted" msprop:Generator_RowDeletingName="GetSampleRowDeleting" msprop:Generator_RowEvArgName="GetSampleRowChangeEvent" msprop:Generator_TablePropName="GetSample" msprop:Generator_RowChangedName="GetSampleRowChanged" msprop:Generator_UserTableName="GetSample" msprop:Generator_RowChangingName="GetSampleRowChanging" msprop:Generator_RowClassName="GetSampleRow" msprop:Generator_TableClassName="GetSampleDataTable" msprop:Generator_TableVarName="tableGetSample">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnVarNameInTable="columnValue" type="xs:double" minOccurs="0" />
-              <xs:element name="DateTime" msprop:Generator_UserColumnName="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_UserColumnName="Value" msprop:Generator_ColumnVarNameInTable="columnValue" type="xs:double" minOccurs="0" />
+              <xs:element name="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_UserColumnName="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
