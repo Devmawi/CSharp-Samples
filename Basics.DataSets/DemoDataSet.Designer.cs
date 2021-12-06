@@ -1245,8 +1245,8 @@ SELECT Id, Value, DateTime FROM Sample WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Dev\\Documents\\Demo1." +
-                "mdf;Integrated Security=True;Connect Timeout=30";
+            this._connection.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=.\\Demo1.mdf;Integrated Securi" +
+                "ty=True;Connect Timeout=30";
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1573,8 +1573,8 @@ SELECT Id, Value, DateTime FROM Sample WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Demo1.mdf;Int" +
-                "egrated Security=True;Connect Timeout=30";
+            this._connection.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=.\\Demo1.mdf;Integrated Securi" +
+                "ty=True;Connect Timeout=30";
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
