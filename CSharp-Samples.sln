@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsNew.Version09", "Whats
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhatsNew.Version08", "WhatsNew.Version08\WhatsNew.Version08.csproj", "{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics.DataSets", "Basics.DataSets\Basics.DataSets.csproj", "{3449018E-FB1D-48AA-A796-A5BC8ACFBBAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdoNet.DataSets", "AdoNet.DataSets\AdoNet.DataSets.csproj", "{216AE25E-3252-4C1A-83A8-E2FC5831D357}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0FAB8E5-EB50-4FF2-8441-6A1CD9B6F441}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3449018E-FB1D-48AA-A796-A5BC8ACFBBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3449018E-FB1D-48AA-A796-A5BC8ACFBBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3449018E-FB1D-48AA-A796-A5BC8ACFBBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3449018E-FB1D-48AA-A796-A5BC8ACFBBAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216AE25E-3252-4C1A-83A8-E2FC5831D357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216AE25E-3252-4C1A-83A8-E2FC5831D357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216AE25E-3252-4C1A-83A8-E2FC5831D357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216AE25E-3252-4C1A-83A8-E2FC5831D357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
