@@ -1,7 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdoNet.DataSets;
 using AdoNet.DataSets.DemoDataSetTableAdapters;
+using System.Data.Common;
 using System.Data.SqlClient;
+using System.Data.SQLite;
 using static System.Console;
 
 Console.WriteLine("Welcome to ADO.NET.DataSet!");
@@ -48,3 +50,43 @@ foreach (var item in rows)
 }
 
 sampleAdapter.Update(ds);
+
+/*
+    DbProviderFactory factory = SQLiteFactory.Instance;
+    DbConnection connection = factory.CreateConnection();
+    connection.ConnectionString = "Data Source=:memory:";
+
+    using (connection)
+    {
+        // Create the select command.
+        DbCommand command = factory.CreateCommand();
+        command.CommandText = sampleAdapter.Adapter.SelectCommand.CommandText;
+        command.Connection = connection;
+
+        // Create the DbDataAdapter.
+        DbDataAdapter adapter = factory.CreateDataAdapter();
+        adapter.SelectCommand = command;
+
+        DbCommand insertCommand = factory.CreateCommand();
+        insertCommand.CommandText = sampleAdapter.Adapter.InsertCommand.CommandText;
+        insertCommand.Connection = connection;
+
+        adapter.InsertCommand = insertCommand;
+
+        DbCommand updateCommand = factory.CreateCommand();
+        updateCommand.CommandText = sampleAdapter.Adapter.InsertCommand.CommandText;
+        updateCommand.Connection = connection;
+        // Create the DbCommandBuilder.
+
+        adapter.UpdateCommand = updateCommand;
+
+        row = ds.Sample.NewSampleRow();
+        row.Value = 3;
+        row.DateTime = DateTime.Now;
+        // sampleAdapter.Insert2, DateTime.Now);
+        ds.Sample.AddSampleRow(row);
+
+        // https://docs.microsoft.com/en-us/visualstudio/data-tools/update-data-by-using-a-tableadapter?view=vs-2022
+        adapter.Update(ds.Sample);
+    }
+*/
