@@ -54,7 +54,7 @@ sampleAdapter.Update(ds);
 /*
     DbProviderFactory factory = SQLiteFactory.Instance;
     DbConnection connection = factory.CreateConnection();
-    connection.ConnectionString = "Data Source=:memory:";
+    connection.ConnectionString = "Data Source=..."; // This must be a database file
 
     using (connection)
     {
